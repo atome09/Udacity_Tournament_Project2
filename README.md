@@ -10,4 +10,17 @@ This Project has a Python module that uses a PostgresSQL to keep track of player
 * tournament_test.py -- Contains unit tests for the founction in the tournament.py file
 
 ###How to Run
-You need the Vagrant virtual machine provided for Udacity: https://www.google.com/url?q=http://github.com/udacity/fullstack-nanodegree-vm&sa=D&ust=1456040649447000&usg=AFQjCNGd34uCkguNg7CK2ENmIstd-dMT_w
+You need the Vagrant virtual machine provided for Udacity: [fullstack-nanodegree-vm](https://github.com/udacity/fullstack-nanodegree-vm)
+1. Start Vagrant
+  1. Open Terminal or cmd and browse to the vagrant folder
+  2. Type `vagrant up`
+2. SSH in to the vagrant VM
+  1. In the same terminal type `vagrant ssh`
+3. Change to the correct folder
+  1. Type `cd /vagrant/tournament`
+4. Open PSQL and run the tournament.sql 
+  1. type `psql`
+  2. copy the contents of tournament.sql and paste in to the terminal window
+  3. type `\q` to quit out of PSQL 
+5. Run the tests
+  1. In the terminal type `python tournament_test.py`
